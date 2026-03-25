@@ -1,0 +1,14 @@
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# data / secrets
+data/*.csv
+data/*.parquet
+*.env
+
+# artifacts/models
+artifacts/
+*.joblib
+*.pkl
