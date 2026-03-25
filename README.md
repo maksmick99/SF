@@ -63,8 +63,15 @@
   - `final_cb_optuna_YYYYMMDD_HHMMSS.joblib`
   - `final_cb_optuna_YYYYMMDD_HHMMSS.json`
 
-## Установка и запуск (macOS / VS Code)
+## Установка и запуск
 ### 1) Создать окружение и поставить зависимости
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -U pip
+pip install -r requirements.txt
+```
+или
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
@@ -75,6 +82,11 @@ pip install pandas numpy scikit-learn catboost optuna seaborn matplotlib joblib
 ### 2) Запуск ноутбука
 Открыть файл:
 - `Brif-1-Real-Estate_Agency-final.ipynb`
+- Исходный датасет **не хранится в репозитории** из-за ограничения GitHub по размеру файлов.
+Скачайте `data.csv` по ссылке (Google Drive) и положите его в папку:
+- `data/data.csv`
+Ссылка на датасет: **[ссылка](https://drive.google.com/file/d/1y0KeGg88jA4C7-zEvR_t3SBEM0otACFP/view?usp=sharing)**
+После этого ноутбук можно запускать без изменений (ячейка читает `data/data.csv`).
 
 Далее выполнить ячейки сверху вниз:
 1) загрузка данных
